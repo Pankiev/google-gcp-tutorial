@@ -62,7 +62,7 @@ public class Application {
     String selfHref = arenaUpdate._links.self.href;
     PlayerState myState = arenaUpdate.arena.state.get(selfHref);
     if((myState.wasHit && random.nextInt(2) == 1) || !hasTargetInRange(arenaUpdate)) {
-        if(random.nextInt(2) == 1) {
+        if(random.nextInt(3) == 1) {
             return "R";
         } else {
             return "F";
